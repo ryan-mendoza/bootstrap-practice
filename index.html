@@ -13,12 +13,12 @@
     <title>Bootstrap Practice</title>
 
     <style>
-        #one {
-            background-color: red;
+        #sidebar {
+            background-color: lightgrey;
         }
 
-        #two {
-            background-color: blue;
+        #content {
+            background-color: darkgrey;
         }
 
         #three {
@@ -29,30 +29,51 @@
 
 <body>
 
-    <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                to
-                featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
-        </div>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div id="one" class="col-sm-4">Column One</div>
-                <div id="two" class="col-sm-4">Column Two</div>
-                <div id="three" class="col-sm-4">Column Three</div>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">BOOTSTRAP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </div>
+              </div>
             </div>
-        </div>
+          </nav>
+
+          <div class="row">
+            <div class="col-sm-8" id="content">
+                <h1>First Heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, maxime culpa expedita iste minima voluptate ipsum eligendi assumenda totam enim nemo id, ad harum fugiat porro aliquid ipsam, accusantium tempore.</p>
+                <h1>Second Heading</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo fugit excepturi nostrum, dicta soluta, temporibus ut dolore iusto ipsa incidunt doloribus! Blanditiis totam labore maxime ullam harum dolorum quae provident.</p>
+            </div>
+    
+            <div class="col-sm-4" id="sidebar">
+                <h1>Sidebar</h1>
+                <p>This is the sidebar content</p>
+                
+            </div>
+          </div>
+
+    
+
+  
+
 
     </div>
 
-
+    <div class="bg-dark">
+        <div class="container-sm">
+            <p class="text-muted mb-0 py-5">This is the bootstrap footer</p>
+        </div>
+        </div>
 
 </body>
 
